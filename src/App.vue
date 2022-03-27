@@ -10,8 +10,6 @@ onMounted(async () => {
   let result = await api.getUserInfo()
   // console.log(result)
 })
-
-
 </script>
 
 <template>

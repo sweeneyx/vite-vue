@@ -4,7 +4,6 @@ import { resolve } from 'path'
 import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   // 服务器配置
   server: {
@@ -20,7 +19,7 @@ export default defineConfig({
   plugins: [
     vue(),
     Components({
-      resolvers: [AntDesignVueResolver()]
+      resolvers: [AntDesignVueResolver()],
     }),
   ],
 })
