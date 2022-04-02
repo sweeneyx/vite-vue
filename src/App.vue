@@ -3,6 +3,7 @@ import { onMounted } from 'vue'
 import HelloWorld from '@/components/HelloWorld.vue'
 import MyMap from '@/views/provide-inject/MyMap.vue'
 import GlobalMessage from '@/views/antd/GlobalMessage.vue'
+import ToDoIndexVue from '@/views/todo/ToDoIndex.vue'
 import * as api from '@/api/index'
 
 // 组件挂载后自动向后端请求数据
@@ -23,6 +24,8 @@ onMounted(async () => {
 
   <!-- ant design vue 全局信息提示框 -->
   <GlobalMessage />
+
+  <ToDoIndexVue />
 </template>
 
 <style>
