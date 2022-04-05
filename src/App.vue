@@ -1,6 +1,10 @@
 <script setup>
 import { onMounted } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 import * as api from '@/api/index'
+
+const router = useRouter()
+const route = useRoute()
 
 // 组件挂载后自动向后端请求数据
 onMounted(async () => {
@@ -13,4 +17,4 @@ onMounted(async () => {
   <router-view />
 </template>
 
-<style lang="less"></style>
+<style lang="less" scoped></style>

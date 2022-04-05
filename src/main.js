@@ -5,7 +5,7 @@ import App from './App.vue'
 import { message } from 'ant-design-vue'
 import 'ant-design-vue/es/message/style/css'
 // 导入全局样式
-import '@/styles/index.less'
+import './styles/global.less'
 // 导入路由
 import router from '@/router'
 
